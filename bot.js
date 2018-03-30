@@ -1,12 +1,9 @@
 const Discord = require('discord.js');
 const serginho = new Discord.Client();
 
-serginho.on('ready', () => {
-    console.log('to pronto');
-});
-
 serginho.on('guildMemberAdd', member => {
-   member.send("Ei seu bunda mole!");
+   //member.guild.channels.get('414151682264662016').send(member.user.toString()+' Ei seu bunda mole');
+   member.guild.channels.get('414151682264662016').send(`${member} Ei seu bunda mole`);
 });
 
 serginho.on('message', message => {
@@ -15,11 +12,10 @@ serginho.on('message', message => {
     }
     else if(message.content === 'oSim'){
         message.reply('otimo, cagão.');
-        const usuario = message.member;
-        usuario.addRole('Hired Gun');
+        message.member.addRole('429160036846272527');
     }
     else if(message.content === 'oNão'){
-        message.reply('um momento amigo. se quiser entrar depois escreva oIn');
+        message.reply('um momento amigo, acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
     }
 });
 
