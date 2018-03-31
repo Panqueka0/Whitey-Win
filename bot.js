@@ -15,7 +15,7 @@ whitey.on('message', message => {
     else if(message.content === 'lSim')
     {
        message.reply('Ótimo, pegue este revolver e va patrulhar!');
-       message.member.setRoles('429157255720730624', '429163812512333826');
+       message.member.addRoles(['429157255720730624', '429163812512333826']);
     }
     else if (message.content === 'lNão')
     {
