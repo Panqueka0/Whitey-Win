@@ -3,7 +3,7 @@ const whitey = new Discord.Client();
 
 whitey.on('guildMemberAdd', member => {
    //member.guild.channels.get('414151682264662016').send(member.user.toString()+' Ei seu bunda mole');
-   member.guild.channels.get('414151682264662016').send(`${member} Ola parceiro, como vai a vida? ('vai bem ou vai mal');
+   member.guild.channels.get('414151682264662016').send('${member} Ola parceiro, como vai a vida? ('vai bem ou vai mal');
 });
 whitey.on('message', message => 
 {
