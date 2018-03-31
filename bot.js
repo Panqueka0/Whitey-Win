@@ -15,8 +15,7 @@ whitey.on('message', message => {
     else if(message.content === 'lSim')
     {
        message.reply('Ótimo, pegue este revolver e va patrulhar!');
-       message.member.addRole('429157255720730624');
-       message.member.addRole('429163812512333826');
+       message.member.addRole('429157255720730624', '429163812512333826');
     }
     else if (message.content === 'lNão')
     {
@@ -25,18 +24,10 @@ whitey.on('message', message => {
    
     else if(message.content === 'vai mal')
     {
-        message.reply('Poxa, que pena amigo. Umas pratas a mais trabalhando pra justiça poderiam ajudar. que tal? (lSim/lNão)');
-         if(message.content === 'lSim')
-         {
-           message.reply('Ótimo, pegue este revolver e va patrulhar!');
-           message.member.addRole('429157255720730624');
-           message.member.addRole('429163812512333826');
-        }
-        else (message.content === 'lNão')
-        {
-           message.reply('Tudo bem parceiro, muito boa tarde');
-        }  
+        message.reply('Poxa, que pena amigo. Umas pratas a mais trabalhando pra justiça poderiam ajudar. que tal? (lSim/lNão)');  
     }
+   
+    
 });
 // THIS  MUST  BE  THIS  WAY
 whitey.login(process.env.BOT_TOKEN);
