@@ -1,21 +1,41 @@
 const Discord = require('discord.js');
-const serginho = new Discord.Client();
+const whitey = new Discord.Client();
 
-serginho.on('guildMemberAdd', member => {
+whitey.on('guildMemberAdd', member => {
    //member.guild.channels.get('414151682264662016').send(member.user.toString()+' Ei seu bunda mole');
-   member.guild.channels.get('414151682264662016').send(`${member} Ei seu bunda mole`);
+   member.guild.channels.get('414151682264662016').send(`${member} Ola parceiro, como vai a vida? ('vai bem ou vai mal`);
 });
 
-serginho.on('message', message => {
-    if (message.content === 'falou comigo?' || message.content === 'falou comigo ?') {
-        message.reply('sim gracinha, quer entrar na minha gangue? (oSim/oNão)');
+whitey.on('message', message => {
+    if (message.content === 'vai bem') 
+    {
+        message.reply('Que bom, gostaria de ganhar umas pratas a mais trabalhando para a justiça?? (lSim/lNão)');
+        if(message.content === 'lSim')
+        {
+           message.reply('Ótimo, pegue este revolver e va patrulhar!);
+           message.member.addRole('429157255720730624');
+           message.member.addRole('429163812512333826');
+        }
+        else (message.content === 'lNão')
+        {
+           message.reply('Tudo bem parceiro, muito boa tarde');
+        }
     }
-    else if(message.content === 'oSim'){
-        message.reply('otimo, cagão.');
-        message.member.addRole('429160036846272527');
-    }
-    else if(message.content === 'oNão'){
-        message.reply('um momento amigo, acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
+   
+    else if(message.content === 'vai mal')
+    {
+        message.reply('Poxa, que pena amigo. Umas pratas a mais trabalhando pra justiça poderiam ajudar. que tal? (lSim/lNão)');
+         if(message.content === 'lSim')
+         {
+           message.reply('Ótimo, pegue este revolver e va patrulhar!);
+           message.member.addRole('429157255720730624');
+           message.member.addRole('429163812512333826');
+        }
+        else (message.content === 'lNão')
+        {
+           message.reply('Tudo bem parceiro, muito boa tarde');
+        }
+        
     }
 });
 
