@@ -10,16 +10,17 @@ whitey.on('message', message => {
     if (message.content === 'vai bem') 
     {
         message.reply('Que bom, gostaria de ganhar umas pratas a mais trabalhando para a justiça?? (lSim/lNão)');
-        if(message.content === 'lSim')
-        {
-           message.reply('Ótimo, pegue este revolver e va patrulhar!');
-           message.member.addRole('429157255720730624');
-           message.member.addRole('429163812512333826');
-        }
-        else (message.content === 'lNão')
-        {
-           message.reply('Tudo bem parceiro, muito boa tarde');
-        }
+        
+    }
+    else if(message.content === 'lSim')
+    {
+       message.reply('Ótimo, pegue este revolver e va patrulhar!');
+       message.member.addRole('429157255720730624');
+       message.member.addRole('429163812512333826');
+    }
+    else if (message.content === 'lNão')
+    {
+       message.reply('Tudo bem parceiro, muito boa tarde');
     }
    
     else if(message.content === 'vai mal')
