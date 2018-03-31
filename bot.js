@@ -34,9 +34,10 @@ whitey.on('message', message => {
         else (message.content === 'lNão')
         {
            message.reply('Tudo bem parceiro, muito boa tarde');
-        }
-        
+        }  
     }
 });
+
+
 // THIS  MUST  BE  THIS  WAY
 whitey.login(process.env.BOT_TOKEN);
