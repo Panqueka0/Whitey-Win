@@ -12,7 +12,7 @@ whitey.on('message', message => {
         message.reply('Que bom, gostaria de ganhar umas pratas a mais trabalhando para a justiça?? (lSim/lNão)');
         if(message.content === 'lSim')
         {
-           message.reply('Ótimo, pegue este revolver e va patrulhar!');
+           message.reply('Ótimo, pegue este revolver e va patrulhar!);
            message.member.addRole('429157255720730624');
            message.member.addRole('429163812512333826');
         }
