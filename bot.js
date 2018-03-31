@@ -6,7 +6,7 @@ whitey.on('guildMemberAdd', member => {
    member.guild.channels.get('414151682264662016').send(`${member} Ola parceiro, como vai a vida? ('vai bem ou vai mal`);
 });
 
-whitey.on('message', message => {
+/*whitey.on('message', message => {
     if (message.content === 'vai bem') 
     {
         message.reply('Que bom, gostaria de ganhar umas pratas a mais trabalhando para a justiça?? (lSim/lNão)');
@@ -38,6 +38,6 @@ whitey.on('message', message => {
         
     }
 });
-
+*/
 // THIS  MUST  BE  THIS  WAY
 serginho.login(process.env.BOT_TOKEN);
